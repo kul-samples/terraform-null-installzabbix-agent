@@ -32,7 +32,7 @@ resource "null_resource" "copy_zabbix_agentd_conf" {
       host = var.host
     }
     source = "zabbix_agentd.conf"
-    destination = "~/zabbix_agentd.conf"
+    destination = "/home/${var.user}/zabbix_agentd.conf"
   }
 }
 resource "null_resource" "start_zabbix_agent" {
