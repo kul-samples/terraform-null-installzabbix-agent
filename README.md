@@ -1,0 +1,1 @@
+# terraform-null-installzabbix-agent
